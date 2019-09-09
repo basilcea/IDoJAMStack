@@ -1,4 +1,4 @@
-import React from "react"
+import React,{useState} from "react"
 import icon from "../assests/icon.png"
 import headerStyles from "./header.module.css"
 import {
@@ -10,6 +10,12 @@ import {
 } from "react-icons/fa"
 
 export default () => {
+  const [clicked, setClicked] = useState(false);
+
+  const buttonClicked = () => {
+
+    setClicked(!clicked)
+  }
   return (
     <div className={headerStyles.headerContainer}>
       <div className={headerStyles.topMenu}>
@@ -17,8 +23,8 @@ export default () => {
           <img className={headerStyles.icon} src={`${icon}`} alt="" />
           <p className={headerStyles.title}>PreciousO</p>
         </div>
-        <FaBars className={headerStyles.hamburger} />
-        <FaTimes className={headerStyles.hamburger} />
+        {!clicked && <FaBars className={headerStyles.hamburger}  onClick={buttonClicked} />}
+        {clicked && <FaTimes className={headerStyles.hamburger}  onClick={buttonClicked}/>}
       </div>
       <div className={headerStyles.socials}>
         <div className={headerStyles.socialsIcon}>
