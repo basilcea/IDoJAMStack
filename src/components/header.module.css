@@ -21,7 +21,7 @@
 }
 .icon{
     width:15%;
-    height:40%;
+    height:50%;
 }
 .title{
     padding:0;
@@ -51,14 +51,14 @@
     align-items:center;
 }
 .singleSocialIcon{
-    color: rgb(84, 20 , 84 ,1);
+    color: black;
     padding:2% 5%;
 }
 .button{
     background-color: rgb(225, 183 , 209 ,1);
     outline:none;
     color:rgb(84, 20 , 84 ,1);
-    height:40px;
+    height:60px;
     width:100%;
     border:none;
     border-radius: 5%;

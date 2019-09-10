@@ -1,0 +1,42 @@
+.container{
+    background:url('../assests/image.jpeg');
+    background-position: top center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:100%;
+    height:70vh;
+    margin:0;
+    align-items:center;
+    display:flex;
+
+}
+.heroMessage{
+    display:flex;
+    background-color:  rgb(255, 255 , 255 ,0.4);
+    height:60%;
+    margin-left:2%;
+    width:60%;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius: 5%;
+}
+.hiParagraph{
+    color:rgb(84, 20 , 84 ,1);;
+    font-size:1.5rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.nameParagraph{
+    color:rgb(84, 20 , 84 ,1);;
+    font-size:1.3rem;
+    padding-top:7%;
+    padding-bottom:1%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.descriptionParagraph{
+    color:black;
+    font-size:.8rem;
+    padding-top:2%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: oblique;
+}

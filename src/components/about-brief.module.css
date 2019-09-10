@@ -1,0 +1,27 @@
+.container{
+    height: 105vh;
+    width:90%;
+    background: linear-gradient(0deg,rgba(124 ,124 , 124 , 0.8)), url('../assests/services.jpg') ;
+    display:flex;
+    background-position: center;
+    background-size:cover;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:0% 5%;
+}
+.heading{
+    font-size:1.5rem;
+    color:rgb(255, 255 , 255 ,1);
+    padding:5%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.paragraph{
+    text-align:center;
+    line-height:1.5rem;
+    font-size:16px;
+    color:rgb(255, 255 , 255 ,1);
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align:left;
+}
