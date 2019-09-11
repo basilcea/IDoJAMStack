@@ -5,5 +5,6 @@
  */
 
 module.exports = {
+  plugins:[`gatsby-transformer-javascript-static-exports`]
   /* Your site config here */
 }
