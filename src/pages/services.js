@@ -1,12 +1,25 @@
-import React from 'react';
-import Services from '../components/services';
-import {data} from '../data';
-import serviceStyle from './services.module.css';
+import React, {useEffect} from "react"
+import { data } from "../data"
+import Services from "../components/services"
+import serviceStyle from "./services.module.css"
+import Header from '../components/header'
+import Footer from '../components/footer'
+if (typeof window !== "undefined") {
+    // eslint-disable-next-line global-require
+    require("smooth-scroll")('a[href*="#"]')
+  }
 
-export default (props) =>{
-    const serviceDisplayed = data.filter(singleService => singleService)
-    const service= {...serviceDisplayed[0]}
-   return( <div className={serviceStyle.container}>
-        <Services service={service}/>
-    </div>)
+
+export default (props) => {
+
+  return (
+    <div className={serviceStyle.container}>
+    <Header/>
+    <div className={serviceStyle.h2}><h2>Services</h2></div>
+      {data.map(service => (
+        <Services key={service.id} service={service} toggleModal={props.toggleModal} />
+      ))}
+     <Footer />
+    </div>
+  )
 }

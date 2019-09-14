@@ -13,9 +13,6 @@ export default () => {
             <input type='submit' value='Submit' />
             <p className={contactStyles.paragraph}>Thanks for submitting</p>
             </form>
-            <div>
-            <p className={contactStyles.footer}>&copy; 2019 by basilcea</p>
-            </div>
         </div>
     )
 }

@@ -1,11 +1,5 @@
-.header{
-    height:190vh;
-    display:flex;
-    flex-direction: column;
-    width:100%;
-}
+
 .servicesDiv{
-    height:50vh;
     width:100%;
     display:flex;
     flex-direction: column;

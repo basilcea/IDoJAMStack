@@ -11,11 +11,12 @@ import {
 
 export default () => {
   const [clicked, setClicked] = useState(false);
-
   const buttonClicked = () => {
 
     setClicked(!clicked)
   }
+
+
   return (
     <div className={headerStyles.headerContainer}>
       <div className={headerStyles.topMenu}>
@@ -33,8 +34,6 @@ export default () => {
           <FaTwitter className={headerStyles.singleSocialIcon} />
 <FaLinkedinIn className={headerStyles.singleSocialIcon}/> 
         </div>
-
-        <button className={headerStyles.button}>Contact Me</button>
       </div>
     </div>
   )

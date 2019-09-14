@@ -1,21 +1,24 @@
+import dataEntry from './assests/dataEntry.jpg';
+import administrative from './assests/administrative.jpg';
+import customerService from './assests/customerService.jpeg';
 export const data = 
 [
   {
     id: 1,
-    url: "./assests/administrative.jpg",
+    url: administrative,
     serviceName: "Administrative Support",
-    serviceDetails: {},
+    serviceDetails: `Services offered includes `
   },
   {
     id: 2,
-    url: "./assests/customerService.jpg",
+    url: customerService,
     serviceName: "Customer Service",
-    serviceDetails: {},
+    serviceDetails: '',
   },
   {
     id: 3,
-    url: "./assests/dataEntry.jpg",
+    url: dataEntry,
     serviceName: "Data Entry",
-    serviceDetails: {},
+    serviceDetails: '',
   },
 ]

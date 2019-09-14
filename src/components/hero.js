@@ -8,6 +8,7 @@ return (
         <p className={heroStyles.hiParagraph}>Hi,</p>
         <p className={heroStyles.nameParagraph}>I'm Precious Ogbonda</p>
         <p className={heroStyles.descriptionParagraph}>Independent Virtual Assistant</p>
+        <button className={heroStyles.button}>Contact Me</button>
         </div>
     </div>
 )

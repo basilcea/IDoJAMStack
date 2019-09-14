@@ -1,9 +1,15 @@
 .container{
-    position:absolute;
-    height:100%;
     width:100%;
-    z-index:+3;
-    background:linear-gradient(0deg,rgba(14, 13, 13, 0.3));
-    background-size:cover;
+    height:70vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin:0;
+}
+h2{
+    line-height:10px;
+    color:black;
 }
