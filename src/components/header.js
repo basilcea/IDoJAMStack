@@ -1,4 +1,4 @@
-import React,{useState} from "react"
+import React, { useState } from "react"
 import icon from "../assests/icon.png"
 import headerStyles from "./header.module.css"
 import {
@@ -6,16 +6,14 @@ import {
   FaTwitter,
   FaLinkedinIn,
   FaBars,
-  FaTimes
+  FaTimes,
 } from "react-icons/fa"
 
 export default () => {
-  const [clicked, setClicked] = useState(false);
+  const [clicked, setClicked] = useState(false)
   const buttonClicked = () => {
-
     setClicked(!clicked)
   }
-
 
   return (
     <div className={headerStyles.headerContainer}>
@@ -24,16 +22,26 @@ export default () => {
           <img className={headerStyles.icon} src={`${icon}`} alt="" />
           <p className={headerStyles.title}>PreciousO</p>
         </div>
-         {!clicked && <FaBars className={headerStyles.hamburger}  onClick={buttonClicked} />}
-  {clicked && <FaTimes className={headerStyles.hamburger}  onClick={buttonClicked}/>}
+        {!clicked && (
+          <FaBars className={headerStyles.hamburger} onClick={buttonClicked} />
+        )}
+        {clicked && (
+          <FaTimes className={headerStyles.hamburger} onClick={buttonClicked} />
+        )}
       </div>
       <div className={headerStyles.socials}>
         <div className={headerStyles.socialsIcon}>
           {" "}
-           <FaFacebookF className={headerStyles.singleSocialIcon}/>
+          <FaFacebookF className={headerStyles.singleSocialIcon} />
           <FaTwitter className={headerStyles.singleSocialIcon} />
-<FaLinkedinIn className={headerStyles.singleSocialIcon}/> 
+          <FaLinkedinIn className={headerStyles.singleSocialIcon} />
         </div>
+      </div>
+      <div className={
+        headerStyles.navBar
+      }>
+        <button className={headerStyles.button}>Services</button>
+        <button className={headerStyles.button}>Contact Me</button>
       </div>
     </div>
   )
