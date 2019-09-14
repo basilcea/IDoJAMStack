@@ -8,9 +8,9 @@ export default (props) =>{
     }
     return (
         <div className={modalStyles.container} key={props.service.id}  style={style}>
-        <h2 id={props.service.id} >{props.service.serviceName}</h2>
+        <h3 id={props.service.id} >{props.service.serviceName}</h3>
         <div>{props.service.serviceDetails}</div>
-        <p>Need an assistant for {props.service.serviceName}? <a href={`mailto:prechistar@gmail.com`}>Contact  Me </a></p>
+        <p>Need an assistant for {props.service.serviceName}? >Contact  Me </p>
         </div>
     )
 }

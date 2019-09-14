@@ -11,7 +11,6 @@ export default () => {
             <input type='text' placeholder="Subject" required/>
             <textarea placeholder='Type your message here...'></textarea>
             <input type='submit' value='Submit' />
-            <p className={contactStyles.paragraph}>Thanks for submitting</p>
             </form>
         </div>
     )
