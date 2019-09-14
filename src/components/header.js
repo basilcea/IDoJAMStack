@@ -39,9 +39,9 @@ export default () => {
       </div>
       <div className={
         headerStyles.navBar
-      }>
+      }>   <button className={headerStyles.button}>About</button>
         <button className={headerStyles.button}>Services</button>
-        <button className={headerStyles.button}>Contact Me</button>
+        <button className={headerStyles.button}>Contact</button>
       </div>
     </div>
   )

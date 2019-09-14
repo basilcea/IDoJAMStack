@@ -15,7 +15,6 @@ export default (props) => {
         <div>
         <h3>{props.shortDetail}</h3>
         <p  className={singleServiceStyle.paragraph}>{props.description}</p>
-        <button className={singleServiceStyle.button}  onClick={() => onClicked(props.id)}>Learn More</button>
         </div>
         </div>
     )

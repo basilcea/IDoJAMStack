@@ -1,7 +1,7 @@
 .container{
-    height: 71vh;
+    height: 78vh;
     width:90%;
-    background: linear-gradient(0deg,rgba(124 ,124 , 124 , 0.8)), url('../assests/services.jpg') ;
+    background: url('../assests/background.jpg');
     display:flex;
     background-position: center;
     background-size:cover;

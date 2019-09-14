@@ -7,7 +7,7 @@ import administrative from '../assests/administrative.jpg'
 export default (props) => {
     return (
             <div className={serviceStyle.servicesDiv}>
-            <h2 className={serviceStyle.heading}>My Services</h2>
+            <h2 className={serviceStyle.heading}>What I Do</h2>
             <p className={serviceStyle.paragraph}>Working remotely, i help firms increase productivity, and accomplish tasks in time, offering the following services:-</p>
             <SingleService modalToDisplay ={ props.modalToDisplay} id={1} description={'Organized and efficent'} url={administrative} shortDetail={'Adminsitrative Support'}/>
             <SingleService modalToDisplay ={ props.modalToDisplay} id={2} description={'Your clients deserve quality service'} url={customerService} shortDetail={'Customer Service'}/>

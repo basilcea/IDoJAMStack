@@ -81,7 +81,7 @@
 
     .navBar{
         display:flex;
-        width:33%;
+        width:42%;
         align-items: center;
         display:flex;
         justify-content:center;
@@ -90,13 +90,18 @@
     .button{
         background-color: inherit;
         outline: none;
-        border:2px solid rgb(225, 183 , 209 ,1);
-        margin:0% 5%;
+        border:none;
         width:30%;
+        margin-right:  3%;
         padding:3%;
-        font-size:1em;
+        font-size:.8em;
         border-radius: 5px;
         color:rgb(84, 20 , 84 ,1);
+    }
+    .button:hover{
+        background-color:rgb(84, 20 , 84 ,1) ;
+        border:none;
+        color:white;
     }
     .topMenu{
         width:33%;
@@ -107,7 +112,7 @@
         display:none
     }
     .socials{
-        width:34%;
-        margin:0 2%;
+        width:25%;
+        margin:0 3%;
     }
 }
