@@ -6,7 +6,6 @@ import singleServiceStyle from './services-sub.module.css';
 export default (props) => {
     const onClicked=(id)=> {
         props.modalToDisplay(id)
-        navigate(`/services/#${id-1}`)
     }
     return (
         <div className={singleServiceStyle.header} >

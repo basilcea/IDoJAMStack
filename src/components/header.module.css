@@ -43,8 +43,8 @@
     color: rgb(225, 183 , 209 ,1);
 }
 .hamburger{
-    width:8%;
-    height:20%;
+    width:6%;
+    height:16%;
     top:-5vh;
     right:5px;
     color: rgb(84, 20 , 84 ,1);
@@ -114,5 +114,10 @@
     .socials{
         width:25%;
         margin:0 3%;
+    }
+}
+@media (min-width:800px){
+    .button{
+        font-size:1.2em
     }
 }

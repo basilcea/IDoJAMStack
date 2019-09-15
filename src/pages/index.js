@@ -3,7 +3,6 @@ import Header from '../components/header'
 import Hero from '../components/hero'
 import About from '../components/about-brief'
 import Services from '../components/services-brief';
-import Service from './services'
 import Contact from '../components/contact';
 import indexStyles from './index.module.css';
 import Footer from '../components/footer'
@@ -27,5 +26,4 @@ export default () =>{
 {!openModal && <Services modalToDisplay={modalToDisplay} openModal={openModal}/>}
 {!openModal && <Contact />}
 {!openModal && <Footer />}
-{openModal && <Service modalId={modalId} toggleModal={toggleModal}/>}
 </div>)}
