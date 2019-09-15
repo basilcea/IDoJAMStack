@@ -1,7 +1,6 @@
 .container{
-    height: 78vh;
-    width:90%;
-    background: url('../assests/background.jpg');
+    height: 70vh;
+   background: url('../assests/background.jpg');
     display:flex;
     background-position: center;
     background-size:cover;
@@ -9,19 +8,39 @@
     justify-content:center;
     align-items:center;
     padding:0% 5%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .heading{
     font-size:1.5rem;
     color:rgb(255, 255 , 255 ,1);
-    padding:5%;
+    padding-bottom:5%;
     font-family:Arial, Helvetica, sans-serif;
 }
 .paragraph{
     text-align:center;
     line-height:1.5rem;
     font-size:16px;
+    text-align: left;
     color:rgb(255, 255 , 255 ,1);
-
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align:left;
+}
+.goDown{
+    font-size:3em;
+    padding-top:10vh;
+    width:100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    color:black;
+}
+@media (min-width:500px){
+    .container{
+     padding: 0% 10%;
+     height: 90vh;
+    }
+    .paragraph{
+        width: 70%;
+    }
 }

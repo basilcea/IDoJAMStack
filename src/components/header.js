@@ -22,12 +22,6 @@ export default () => {
           <img className={headerStyles.icon} src={`${icon}`} alt="" />
           <p className={headerStyles.title}>PreciousO</p>
         </div>
-        {!clicked && (
-          <FaBars className={headerStyles.hamburger} onClick={buttonClicked} />
-        )}
-        {clicked && (
-          <FaTimes className={headerStyles.hamburger} onClick={buttonClicked} />
-        )}
       </div>
       <div className={headerStyles.socials}>
         <div className={headerStyles.socialsIcon}>

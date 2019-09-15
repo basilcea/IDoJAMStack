@@ -4,6 +4,10 @@
     display:flex;
     flex-direction: column;
     align-items:center;
+    background-color:white;   
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 .heading{
     font-size:1.5rem;
@@ -18,4 +22,11 @@
    line-height:1.5rem;
     color:black;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+@media (min-width:500px){
+    .serviceInfo{
+        width:100%;
+        display:flex;
+        justify-content:space-evenly
+    }
 }

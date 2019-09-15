@@ -19,13 +19,36 @@
     display:flex;
 }
 .navBar{
-    display:none;
+    width:100%;
+    display:flex;
+    align-items: center;
+    display:flex;
+    justify-content:center;
+    height:40%;
+    padding-bottom: 3px;
+}
+
+.button{
+    background-color: inherit;
+    outline: none;
+    border:none;
+    width:30%;
+    margin-right:  3%;
+    padding:3%;
+    font-size:.8em;
+    border-radius: 5px;
+    color:rgb(84, 20 , 84 ,1);
+}
+.button:hover{
+    background-color:rgb(84, 20 , 84 ,1) ;
+    border:none;
+    color:white;
 }
 .iconDiv{
     width:90%;
     display: flex;
     height:95%;
-    margin-top:0%;
+    margin-top:1%;
     flex-direction: column;
     align-items:center;
     justify-content:center;
@@ -80,29 +103,10 @@
 
 
     .navBar{
-        display:flex;
         width:42%;
-        align-items: center;
-        display:flex;
-        justify-content:center;
-        height:50%;
+  
     }
-    .button{
-        background-color: inherit;
-        outline: none;
-        border:none;
-        width:30%;
-        margin-right:  3%;
-        padding:3%;
-        font-size:.8em;
-        border-radius: 5px;
-        color:rgb(84, 20 , 84 ,1);
-    }
-    .button:hover{
-        background-color:rgb(84, 20 , 84 ,1) ;
-        border:none;
-        color:white;
-    }
+   
     .topMenu{
         width:33%;
         align-items: center;
@@ -119,5 +123,14 @@
 @media (min-width:800px){
     .button{
         font-size:1.2em
+    }
+    .singleSocialIcon{
+        font-size:1.2em
+    }
+ 
+}
+@media(min-width:1000px){
+    .headerContainer{
+        width:80%
     }
 }
