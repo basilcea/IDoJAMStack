@@ -6,14 +6,10 @@ import {
   FaFacebookF,
   FaTwitter,
   FaLinkedinIn,
-  FaBars,
-  FaTimes,
 } from "react-icons/fa"
 
-export default () => {
-  const onClicked = value =>{
-    navigate(`/#${value}`)
-  }
+export default (props) => {
+
 
   return (
     <div className={headerStyles.headerContainer}>
@@ -35,10 +31,10 @@ export default () => {
         headerStyles.navBar
 
       }>           
-      <button className={headerStyles.button}  onClick={()=>onClicked('home')}>Home</button>
-      <button className={headerStyles.button} onClick={()=>onClicked('about')}>About</button>
-        <button className={headerStyles.button}  onClick={()=>onClicked('services')}>Services</button>
-        <button className={headerStyles.button}  onClick={()=>onClicked('contact')}>Contact</button>
+      <button className={headerStyles.button}  onClick={()=>props.onClicked('home')}>Home</button>
+      <button className={headerStyles.button} onClick={()=>props.onClicked('about')}>About</button>
+        <button className={headerStyles.button}  onClick={()=>props.onClicked('services')}>Services</button>
+        <button className={headerStyles.button}  onClick={()=>props.onClicked('contact')}>Contact</button>
 
       </div>
     </div>

@@ -1,9 +1,9 @@
 import React from 'react';
 import contactStyles from '../components/contact.module.css'
 
-export default () => {
+export default (props) => {
     return (
-        <div className={contactStyles.container} id={'contact'}>
+        <div className={contactStyles.container} id={'contact'}> 
             <h2 className={contactStyles.heading}>Contact Me</h2>
             <form className={contactStyles.form}>
             <p className={contactStyles.p}>I would love to hear from you...</p>

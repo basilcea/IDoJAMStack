@@ -1,5 +1,4 @@
 import React from 'react';
-import {navigate} from 'gatsby'
 import singleServiceStyle from './services-sub.module.css';
 
 

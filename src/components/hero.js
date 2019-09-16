@@ -1,16 +1,16 @@
 import React from 'react';
 import heroStyles from './hero.module.css';
-import {navigate} from 'gatsby';
 import {FaChevronCircleDown} from 'react-icons/fa';
-import {TimelineLite} from 'gsap'
-export default () =>{
+
+export default (props) =>{
+let container;
 return (
-    <div className={heroStyles.container} id={'home'}>
+    <div ref={div=>(container =div)} className={heroStyles.container} id={'home'} style={{paddingTop:`${props.val}`}} >
         <p className={heroStyles.hiParagraph}>Hi !</p>
         <p className={heroStyles.nameParagraph}>I'm Precious Ogbonda</p>
         <p className={heroStyles.descriptionParagraph}>An Independent Virtual Assistant</p>
         <button className={heroStyles.button}>Contact Me</button>
-        <div className={heroStyles.goDown}><FaChevronCircleDown onClick={()=>{navigate('/#about')}}/></div>
+        <div className={heroStyles.goDown}><FaChevronCircleDown onClick={()=>props.onClicked('about')}/></div>
             </div>
 )
 }
