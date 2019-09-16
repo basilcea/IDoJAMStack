@@ -5,7 +5,7 @@ import {FaChevronCircleDown} from 'react-icons/fa';
 import {TimelineLite} from 'gsap'
 export default () =>{
 return (
-    <div className={heroStyles.container}>
+    <div className={heroStyles.container} id={'home'}>
         <p className={heroStyles.hiParagraph}>Hi !</p>
         <p className={heroStyles.nameParagraph}>I'm Precious Ogbonda</p>
         <p className={heroStyles.descriptionParagraph}>An Independent Virtual Assistant</p>

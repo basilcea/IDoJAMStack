@@ -6,24 +6,19 @@ import Services from '../components/services-brief';
 import Contact from '../components/contact';
 import indexStyles from './index.module.css';
 import Footer from '../components/footer'
-export default () =>{
-    const [openModal , setOpenModal] =useState(false)
-    const [modalId , setModalId] =useState(0)
-    const toggleModal=(value) =>{
-        setOpenModal(value)
+export default (props) =>{
+    const [component ,setComponent] =useState('home')
+const addMarginTop =(value , margin)=> {
+    setComponent(value)
+    const style={
+        marginTop:`${margin}`
     }
-  
-    const modalToDisplay=(value)=>{
-        console.log(value - 1)
-        toggleModal(true)
-        setModalId(value - 1)
-    }
-
+}
  return(<div className={indexStyles.container} >
- {!openModal && <Header />}
- {!openModal && <Hero />}
-{!openModal && <About />}
-{!openModal && <Services modalToDisplay={modalToDisplay} openModal={openModal}/>}
-{!openModal && <Contact />}
-{!openModal && <Footer />}
+ <Header addMarginTop={addMarginTop}/>
+<Hero />
+<About />
+ <Services />
+<Contact />
+<Footer />
 </div>)}

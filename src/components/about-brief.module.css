@@ -1,5 +1,5 @@
 .container{
-    height: 70vh;
+    height: 80vh;
    background: url('../assests/background.jpg');
     display:flex;
     background-position: center;
@@ -38,7 +38,7 @@
 @media (min-width:500px){
     .container{
      padding: 0% 10%;
-     height: 90vh;
+     height: 88vh;
     }
     .paragraph{
         width: 70%;

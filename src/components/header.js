@@ -1,6 +1,7 @@
-import React, { useState } from "react"
+import React from "react"
 import icon from "../assests/icon.png"
 import headerStyles from "./header.module.css"
+import {navigate} from 'gatsby'
 import {
   FaFacebookF,
   FaTwitter,
@@ -10,9 +11,8 @@ import {
 } from "react-icons/fa"
 
 export default () => {
-  const [clicked, setClicked] = useState(false)
-  const buttonClicked = () => {
-    setClicked(!clicked)
+  const onClicked = value =>{
+    navigate(`/#${value}`)
   }
 
   return (
@@ -33,9 +33,13 @@ export default () => {
       </div>
       <div className={
         headerStyles.navBar
-      }>   <button className={headerStyles.button}>About</button>
-        <button className={headerStyles.button}>Services</button>
-        <button className={headerStyles.button}>Contact</button>
+
+      }>           
+      <button className={headerStyles.button}  onClick={()=>onClicked('home')}>Home</button>
+      <button className={headerStyles.button} onClick={()=>onClicked('about')}>About</button>
+        <button className={headerStyles.button}  onClick={()=>onClicked('services')}>Services</button>
+        <button className={headerStyles.button}  onClick={()=>onClicked('contact')}>Contact</button>
+
       </div>
     </div>
   )
