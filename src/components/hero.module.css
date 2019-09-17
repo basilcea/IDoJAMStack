@@ -47,13 +47,21 @@
 .button{
     background-color: white;
     outline:none;
-    color:rgb(84, 20 , 84 ,1);
     height:3em;
     width:60%;
     margin:5% 20%;
     border:none;
     border-radius: 5%;
 }
+.button:hover{
+    background-color:rgb(84, 20 , 84 ,1) ;
+ 
+}
+.a{width:100%;
+    text-decoration: none;
+    color:black;
+}
+
 @media (min-width:500px){
     .hiParagraph{
         font-size:3em;

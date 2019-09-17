@@ -9,7 +9,7 @@ return (
         <p className={heroStyles.hiParagraph}>Hi !</p>
         <p className={heroStyles.nameParagraph}>I'm Precious Ogbonda</p>
         <p className={heroStyles.descriptionParagraph}>An Independent Virtual Assistant</p>
-        <button className={heroStyles.button}>Contact Me</button>
+        <button className={heroStyles.button}><a className={heroStyles.a} href={`mailto:${process.env.EMAILURL}`}>Contact Me </a></button>
         <div className={heroStyles.goDown}><FaChevronCircleDown onClick={()=>props.onClicked('about')}/></div>
             </div>
 )

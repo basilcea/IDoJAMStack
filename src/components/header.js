@@ -22,9 +22,9 @@ export default (props) => {
       <div className={headerStyles.socials}>
         <div className={headerStyles.socialsIcon}>
           {" "}
-          <FaFacebookF className={headerStyles.singleSocialIcon} />
-          <FaTwitter className={headerStyles.singleSocialIcon} />
-          <FaLinkedinIn className={headerStyles.singleSocialIcon} />
+          <a className={headerStyles.singleSocialIcon} href={`${process.env.FACEBOOKURL}`}><FaFacebookF  /></a>
+          <a className={headerStyles.singleSocialIcon} href={`${process.env.TWITTERURL}`}><FaTwitter  /></a>
+          <a className={headerStyles.singleSocialIcon} href={`${process.env.LINKEDINURL}`}><FaLinkedinIn /></a>
         </div>
       </div>
       <div className={

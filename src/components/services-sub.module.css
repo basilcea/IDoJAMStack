@@ -11,8 +11,8 @@
     width:100%;
     margin:5% 0%;
     background-position:center;
-    background-color:inherit;
     background-size:50%;
+    background-size:contain;
     background-repeat: no-repeat;
 }
 h3{
